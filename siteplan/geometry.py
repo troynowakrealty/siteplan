@@ -28,6 +28,7 @@ class Rectangle:
     def move(self, dx: float, dy: float):
         self.x += dx
         self.y += dy
+    return self
 
 def distance(a: tuple, b: tuple) -> float:
     return sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
