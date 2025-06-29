@@ -1,60 +1,33 @@
-from dataclasses import dataclass
 from math import sqrt
-from typing import Union, Tuple
 
-@dataclass(frozen=True)
 class Point:
-    x: float = 0
-    y: float = 0
+    def __init__(self, x: float, y: float):
+        self.x = x
+        self.y = y
 
-@dataclass(frozen=True)
 class Size:
-    width: float = 0
-    height: float = 0
+    def __init__(self, width: float, height: float):
+        self.width = width
+        self.height = height
 
 class Rectangle:
     def __init__(self, *args):
-        # Accept (x, y, width, height)
-        if len(args) == 4 and all(isinstance(v, (int, float)) for v in args):
-            x, y, w, h = args
-            self.origin = Point(x, y)
-            self.size = Size(w, h)
-        # Accept (Point, Size)
-        elif len(args) == 2 and isinstance(args[0], Point) and isinstance(args[1], Size):
-            self.origin = args[0]
-            self.size = args[1]
+        if len(args) == 2 and isinstance(args[0], Point) and isinstance(args[1], Size):
+            self.x = args[0].x
+            self.y = args[0].y
+            self.width = args[1].width
+            self.height = args[1].height
+        elif len(args) == 4:
+            self.x, self.y, self.width, self.height = args
         else:
-            raise TypeError("Rectangle requires (x, y, w, h) or (Point, Size)")
+            raise ValueError("Invalid arguments for Rectangle constructor")
 
-    @property
-    def x(self):
-        return self.origin.x
+    def center(self):
+        return (self.x + self.width / 2, self.y + self.height / 2)
 
-    @property
-    def y(self):
-        return self.origin.y
+    def move(self, dx: float, dy: float):
+        self.x += dx
+        self.y += dy
 
-    @property
-    def width(self):
-        return self.size.width
-
-    @property
-    def height(self):
-        return self.size.height
-
-    def center(self) -> Point:
-        return Point(
-            self.x + self.width/2,
-            self.y + self.height/2
-        )
-
-    def move(self, dx: float, dy: float) -> 'Rectangle':
-        return Rectangle(
-            self.x + dx,
-            self.y + dy,
-            self.width,
-            self.height
-        )
-
-def distance(a: Tuple[float, float], b: Tuple[float, float]) -> float:
-    return sqrt((b[0]-a[0])**2 + (b[1]-a[1])**2)
+def distance(a: tuple, b: tuple) -> float:
+    return sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
