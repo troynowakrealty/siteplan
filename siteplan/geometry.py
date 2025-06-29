@@ -2,3 +2,4 @@
 
 @dataclass
 class Rectangle:
+    pass
