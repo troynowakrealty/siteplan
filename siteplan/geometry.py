@@ -6,9 +6,7 @@ class Rectangle:
     pass
 
 
-def distance(a, b):
-    return 0
-
+from math import sqrtnndef distance(a: tuple, b: tuple) -> float:n    return sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
 @dataclass
 class Point:
     x: int = 0
