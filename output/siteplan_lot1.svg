@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='450' height='1101.1'>
+  <!-- Lot 1 -->
+  <rect x='0' y='0' width='450' height='1101.1' fill='none' stroke='black' />
+  <text x='225.0' y='20' text-anchor='middle' font-size='14'>Lot 1</text>
+
+  <!-- Setback lines -->
+  <line x1='0' y1='180' x2='450' y2='180' stroke='blue' stroke-dasharray='5,5' />
+  <text x='5' y='175' font-size='12'>Front setback 18'</text>
+  <line x1='0' y1='991.0999999999999' x2='450' y2='991.0999999999999' stroke='blue' stroke-dasharray='5,5' />
+  <text x='5' y='985.0999999999999' font-size='12'>Rear setback 11'</text>
+  <line x1='80' y1='0' x2='80' y2='1101.1' stroke='blue' stroke-dasharray='5,5' />
+  <text x='85' y='550.55' font-size='12' transform='rotate(-90 85,550.55)'>Left setback 8'</text>
+  <line x1='400' y1='0' x2='400' y2='1101.1' stroke='blue' stroke-dasharray='5,5' />
+  <text x='395' y='550.55' font-size='12' transform='rotate(-90 395,550.55)'>Right setback 5'</text>
+
+  <!-- Duplex -->
+  <rect x='80' y='180' width='330' height='280' fill='#dddddd' stroke='black' />
+  <text x='245.0' y='320.0' text-anchor='middle' font-size='14'>Duplex</text>
+
+  <!-- ADU -->
+  <rect x='80' y='660' width='300' height='200' fill='#cccccc' stroke='black' />
+  <text x='230.0' y='760.0' text-anchor='middle' font-size='14'>ADU</text>
+
+  <!-- Parking Pads -->
+  <rect x='80' y='860' width='90' height='200' fill='#eeeeee' stroke='black' />
+  <text x='125.0' y='960.0' text-anchor='middle' font-size='12'>Parking 1</text>
+  <rect x='170' y='860' width='90' height='200' fill='#eeeeee' stroke='black' />
+  <text x='215.0' y='960.0' text-anchor='middle' font-size='12'>Parking 2</text>
+  <rect x='260' y='860' width='90' height='200' fill='#eeeeee' stroke='black' />
+  <text x='305.0' y='960.0' text-anchor='middle' font-size='12'>Parking 3</text>
+
+  <!-- Trash Pad -->
+  <rect x='390' y='860' width='60' height='200' fill='#eeeeee' stroke='black' />
+  <text x='420.0' y='960.0' text-anchor='middle' font-size='12'>Trash</text>
+  <text x='445' y='1096.1' text-anchor='end' font-size='12'>Scale 1" = 10'</text>
+</svg>
