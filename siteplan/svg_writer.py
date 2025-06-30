@@ -74,8 +74,18 @@ def svg_boundary(rect: Rectangle, offset: float = 5, **attrs: object) -> str:
     return svg_polygon(points, **boundary_attrs)
 
 
-def svg_dimensions(rect: Rectangle, scale: float = 10) -> str:
-    """Return simple width/height dimension lines and labels for *rect*."""
+def svg_dimensions(rect: Rectangle, scale: float = 10, font_size: int = 12) -> str:
+    """Return simple width/height dimension lines and labels for *rect*.
+
+    Parameters
+    ----------
+    rect:
+        Rectangle to annotate with dimensions.
+    scale:
+        Drawing scale in pixels per foot.
+    font_size:
+        Font size for the dimension text labels.
+    """
     elements = []
     top_y = rect.y - 10
     left_x = rect.x - 10
@@ -97,7 +107,7 @@ def svg_dimensions(rect: Rectangle, scale: float = 10) -> str:
             top_y - 2,
             f"{rect.width/scale} ft",
             fill="black",
-            **{"text-anchor": "middle", "font-size": 12},
+            **{"text-anchor": "middle", "font-size": font_size},
         )
     )
     elements.append(
@@ -107,7 +117,7 @@ def svg_dimensions(rect: Rectangle, scale: float = 10) -> str:
             f"{rect.height/scale} ft",
             fill="black",
             transform=f"rotate(-90 {left_x - 2},{rect.y + rect.height / 2})",
-            **{"text-anchor": "middle", "font-size": 12},
+            **{"text-anchor": "middle", "font-size": font_size},
         )
     )
     return "\n".join(elements)
