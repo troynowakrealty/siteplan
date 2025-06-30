@@ -52,7 +52,7 @@ def main() -> None:
         + svg_text(
             10,
             title_y + 20,
-            "Site Plan \u2013 Lot 1 & Lot 2 (NTM-1 St Pete)",
+            "Site Plan \u2013 Lot 1 &amp; Lot 2 (NTM-1 St Pete)",
             **{"font-size": 14, "font-family": "sans-serif"},
         )
     )
