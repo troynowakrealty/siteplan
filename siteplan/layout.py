@@ -24,8 +24,18 @@ class Layout:
     def add_shape(self, shape: Rectangle) -> None:
         self.shapes.append(shape)
 
-    def export_svg(self, path: Path, scale: float = 10) -> None:
-        """Export layout as scaled SVG with gridlines and basic dimensions."""
+    def export_svg(self, path: Path, scale: float = 10, font_size: int = 12) -> None:
+        """Export layout as scaled SVG with gridlines and basic dimensions.
+
+        Parameters
+        ----------
+        path:
+            Destination path for the SVG file.
+        scale:
+            Conversion factor from pixels to feet for dimension labels.
+        font_size:
+            Size of the text used for dimension annotations.
+        """
         path = Path(path)
         path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -41,7 +51,7 @@ class Layout:
             for rect in self.shapes:
                 f.write(svg_rect(rect, fill="none", stroke="black") + "\n")
                 f.write(svg_boundary(rect) + "\n")
-                f.write(svg_dimensions(rect, scale) + "\n")
+                f.write(svg_dimensions(rect, scale, font_size) + "\n")
             f.write(svg_footer() + "\n")
 
     def save(self, path: Path) -> None:
