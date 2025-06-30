@@ -21,4 +21,4 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "Trash Pad" in content
     assert "North" in content
     assert "Zoning: NTM-1" in content
-    assert "2946 & 2948 22nd Ave" in content
+    assert "2946 &amp; 2948 22nd Ave" in content

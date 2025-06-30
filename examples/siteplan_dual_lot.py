@@ -62,7 +62,7 @@ def main() -> None:
         + svg_text(
             10,
             title_y + 38,
-            "2946 & 2948 22nd Ave S, St. Petersburg, FL 33712",
+            "2946 &amp; 2948 22nd Ave S, St. Petersburg, FL 33712",
             **{"font-size": 12, "font-family": "sans-serif"},
         )
     )
@@ -80,7 +80,7 @@ def main() -> None:
         + svg_text(
             10,
             title_y + 70,
-            "Lots 5 & 6, Block 1, Lakeview Subdivision",
+            "Lots 5 &amp; 6, Block 1, Lakeview Subdivision",
             **{"font-size": 12, "font-family": "sans-serif"},
         )
     )
