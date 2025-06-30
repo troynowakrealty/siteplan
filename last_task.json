@@ -1,0 +1,8 @@
+{
+  "task": "shell",
+  "params": {
+    "command": "echo test"
+  },
+  "result": "Task shell not found: No module named 'codex_tasks.shell'",
+  "status": "error"
+}

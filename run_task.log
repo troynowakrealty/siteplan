@@ -1,0 +1,11 @@
+2025-06-30 18:34:30,882 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-06-30 18:34:30,883 INFO [33mPress CTRL+C to quit[0m
+2025-06-30 18:34:36,959 INFO 127.0.0.1 - - [30/Jun/2025 18:34:36] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 18:56:23,633 INFO 127.0.0.1 - - [30/Jun/2025 18:56:23] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 18:56:56,773 INFO 127.0.0.1 - - [30/Jun/2025 18:56:56] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 18:57:30,442 INFO 127.0.0.1 - - [30/Jun/2025 18:57:30] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 18:57:58,652 INFO 127.0.0.1 - - [30/Jun/2025 18:57:58] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 18:58:21,881 INFO 127.0.0.1 - - [30/Jun/2025 18:58:21] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 18:59:43,207 INFO 127.0.0.1 - - [30/Jun/2025 18:59:43] "POST /run-task HTTP/1.1" 200 -
+2025-06-30 19:00:17,677 INFO 127.0.0.1 - - [30/Jun/2025 19:00:17] "POST /run-task HTTP/1.1" 200 -
