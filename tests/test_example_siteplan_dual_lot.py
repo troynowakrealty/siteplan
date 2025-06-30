@@ -9,17 +9,7 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     svg = Path("output/siteplan_dual_lot.svg")
     assert svg.exists()
     content = svg.read_text()
-    assert "<rect" in content
-    assert "Front Setback" in content
-    assert "Front Duplex" in content
-    assert "Porch A" in content
-    assert "Primary Entrance" in content
-    assert "Garage with ADU" in content
-    assert "FFE = 9.0'" in content
-    assert "A/C Unit" in content
-    assert "P1" in content
-    assert "Trash Pad" in content
-    assert "North" in content
-    assert "Zoning: NTM-1" in content
-    assert "2946 &amp; 2948 22nd Ave" in content
-    assert "Exterior Stairs" in content
+    # At least ten rectangles should be drawn for lots and features
+    assert content.count("<rect") >= 10
+    # No text labels should appear in the output
+    assert "<text" not in content
