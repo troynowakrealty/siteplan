@@ -13,3 +13,4 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "Front Setback" in content
     assert "Front Duplex" in content
     assert "Porch A" in content
+    assert "Side Door" in content

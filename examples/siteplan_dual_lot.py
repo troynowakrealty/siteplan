@@ -248,8 +248,8 @@ def main() -> None:
     lines.append("  <!-- Duplexes -->")
     duplex_w = 33 * SCALE
     duplex_h = 28 * SCALE
-    lot2_duplex_x = 67.8
-    lot1_duplex_x = 502.6
+    lot2_duplex_x = 87.8
+    lot1_duplex_x = 517.6
     duplex_y = front_y
     lines.append(
         "  "
@@ -283,6 +283,24 @@ def main() -> None:
             duplex_y + duplex_h / 2,
             "Front Duplex (33' × 28', 2-Story)",
             **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+
+    # Side door for Lot 2 left unit facing 30th Street South
+    door_x = lot2_duplex_x
+    door_y = 300
+    lines.append("  " + svg_rect(Rectangle(door_x, door_y, 5, 10), fill="black"))
+    lines.append(
+        "  "
+        + svg_text(
+            door_x - 5,
+            door_y + 5,
+            "Side Door (Facing 30th St S)",
+            **{
+                "font-size": 10,
+                "text-anchor": "end",
+                "transform": f"rotate(-90 {door_x - 5},{door_y + 5})",
+            },
         )
     )
 

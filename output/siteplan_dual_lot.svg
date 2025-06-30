@@ -31,10 +31,12 @@
   <text x='912.6' y='1097.2' text-anchor='end' font-size='12'>Scale 1" = 10'</text>
 
   <!-- Duplexes -->
-  <rect x='67.8' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
-  <text x='232.8' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
-  <rect x='502.6' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
-  <text x='667.6' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+  <rect x='87.8' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
+  <text x='252.8' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+  <rect x='517.6' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
+  <text x='682.6' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+  <rect x='87.8' y='300' width='5' height='10' fill='black' />
+  <text x='82.8' y='305' font-size='10' text-anchor='end' transform='rotate(-90 82.8,305)'>Side Door (Facing 30th St S)</text>
 
   <!-- Porches -->
   <rect x='67.8' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
