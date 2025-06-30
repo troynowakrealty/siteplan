@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import List
 from pathlib import Path
+import json
+import pickle
 
 from .geometry import Rectangle
 from .svg_writer import svg_footer, svg_grid, svg_header, svg_rect, svg_text
@@ -45,3 +47,25 @@ class Layout:
                     + "\n"
                 )
             f.write(svg_footer() + "\n")
+
+    def save(self, path: Path) -> None:
+        path = Path(path)
+        if path.suffix == ".json":
+            data = {"shapes": [[r.x, r.y, r.width, r.height] for r in self.shapes]}
+            path.write_text(json.dumps(data))
+        else:
+            with path.open("wb") as f:
+                pickle.dump(self, f)
+
+    @classmethod
+    def load(cls, path: Path) -> "Layout":
+        path = Path(path)
+        if path.suffix == ".json":
+            data = json.loads(path.read_text())
+            layout = cls()
+            for vals in data.get("shapes", []):
+                layout.add_shape(Rectangle(*vals))
+            return layout
+        else:
+            with path.open("rb") as f:
+                return pickle.load(f)
