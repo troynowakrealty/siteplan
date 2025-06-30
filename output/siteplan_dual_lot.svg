@@ -1,7 +1,7 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='917.6' height='1102.2'>
   <!-- Title Block -->
   <rect x='5' y='1042.2' width='300' height='50' fill='#f5f5f5' stroke='black' />
-  <text x='10' y='1062.2' font-size='14' font-family='sans-serif'>Site Plan – Lot 1 & Lot 2 (NT-M1)</text>
+  <text x='10' y='1062.2' font-size='14' font-family='sans-serif'>Site Plan – Lot 1 & Lot 2 (NTM-1 St Pete)</text>
   <!-- North Arrow -->
   <polygon points='458.8,40 448.8,60 468.8,60' fill='black' />
   <text x='458.8' y='75' text-anchor='middle' font-size='12'>North</text>
@@ -42,7 +42,7 @@
   <line x1='757.6' y1='1062.2' x2='857.6' y2='1062.2' stroke='black' stroke-width='2' />
   <text x='807.6' y='1057.2' text-anchor='middle' font-size='10'>10'</text>
   <text x='912.6' y='1047.2' text-anchor='end' font-size='12'>Scale 1" = 10'</text>
-  <text x='912.6' y='1077.2' text-anchor='end' font-size='12'>Zoning: NT-M1 – Setback Compliant</text>
+  <text x='912.6' y='1077.2' text-anchor='end' font-size='12'>Zoning: NTM-1 (St. Petersburg, FL) – Setback Compliant</text>
 
   <!-- Duplexes -->
   <rect x='87.8' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
@@ -67,6 +67,14 @@
   <text x='243.8' y='760.0' text-anchor='middle' font-size='12'>Garage with ADU (2BR/1BA)</text>
   <rect x='518.8' y='660' width='300' height='200' fill='#ccffcc' stroke='black' />
   <text x='668.8' y='760.0' text-anchor='middle' font-size='12'>Garage with ADU (2BR/1BA)</text>
+
+  <!-- ADU Stairs -->
+  <line x1='243.8' y1='860' x2='243.8' y2='880' stroke='black' />
+  <polygon points='238.8,880 248.8,880 243.8,890' fill='black' />
+  <text x='243.8' y='895' text-anchor='middle' font-size='10'>Stairs</text>
+  <line x1='668.8' y1='860' x2='668.8' y2='880' stroke='black' />
+  <polygon points='663.8,880 673.8,880 668.8,890' fill='black' />
+  <text x='668.8' y='895' text-anchor='middle' font-size='10'>Stairs</text>
 
   <!-- Parking Pads -->
   <rect x='93.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />

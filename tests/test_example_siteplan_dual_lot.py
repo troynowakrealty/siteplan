@@ -18,4 +18,4 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "P1" in content
     assert "Trash Pad" in content
     assert "North" in content
-    assert "Zoning: NT-M1" in content
+    assert "Zoning: NTM-1" in content

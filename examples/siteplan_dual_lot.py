@@ -51,7 +51,7 @@ def main() -> None:
         + svg_text(
             10,
             title_y + 20,
-            "Site Plan \u2013 Lot 1 & Lot 2 (NT-M1)",
+            "Site Plan \u2013 Lot 1 & Lot 2 (NTM-1 St Pete)",
             **{"font-size": 14, "font-family": "sans-serif"},
         )
     )
@@ -344,7 +344,7 @@ def main() -> None:
         + svg_text(
             width - 5,
             scale_bar_y + 15,
-            "Zoning: NT-M1 \u2013 Setback Compliant",
+            "Zoning: NTM-1 (St. Petersburg, FL) \u2013 Setback Compliant",
             **{"text-anchor": "end", "font-size": 12},
         )
     )
@@ -496,6 +496,40 @@ def main() -> None:
             **{"text-anchor": "middle", "font-size": 12},
         )
     )
+
+    lines.append("")
+    lines.append("  <!-- ADU Stairs -->")
+    for adu_x in [lot2_adu_x, lot1_adu_x]:
+        base_x = adu_x + adu_w / 2
+        base_y = adu_y + adu_h
+        lines.append(
+            "  "
+            + svg_line(
+                Point(base_x, base_y),
+                Point(base_x, base_y + 20),
+                stroke="black",
+            )
+        )
+        lines.append(
+            "  "
+            + svg_polygon(
+                [
+                    Point(base_x - 5, base_y + 20),
+                    Point(base_x + 5, base_y + 20),
+                    Point(base_x, base_y + 30),
+                ],
+                fill="black",
+            )
+        )
+        lines.append(
+            "  "
+            + svg_text(
+                base_x,
+                base_y + 35,
+                "Stairs",
+                **{"text-anchor": "middle", "font-size": 10},
+            )
+        )
 
     lines.append("")
     lines.append("  <!-- Parking Pads -->")
