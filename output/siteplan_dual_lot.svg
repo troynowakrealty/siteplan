@@ -1,11 +1,11 @@
 <svg xmlns='http://www.w3.org/2000/svg' width='917.6' height='1102.2'>
   <!-- Title Block -->
-  <rect x='5' y='1042.2' width='300' height='50' fill='#f5f5f5' stroke='black' />
-  <text x='10' y='1062.2' font-size='14' font-family='sans-serif'>Site Plan – Lot 1 & Lot 2 (NTM-1 St Pete)</text>
+  <rect x='5' y='5' width='300' height='50' fill='#f5f5f5' stroke='black' />
+  <text x='10' y='25' font-size='14' font-family='sans-serif'>Site Plan – Lot 1 & Lot 2 (NTM-1 St Pete)</text>
   <!-- North Arrow -->
   <polygon points='458.8,40 448.8,60 468.8,60' fill='black' />
   <text x='458.8' y='75' text-anchor='middle' font-size='12'>North</text>
-  <text x='10' y='1082.2' font-size='12' font-family='sans-serif'>Prepared: 2025-06-30</text>
+  <text x='10' y='45' font-size='12' font-family='sans-serif'>Prepared: 2025-06-30</text>
   <!-- Lot 2 -->
   <rect x='0' y='0' width='467.6' height='1102.2' fill='none' stroke='black' stroke-width='2' />
   <text x='233.8' y='20' text-anchor='middle' font-size='14'>Lot 2</text>

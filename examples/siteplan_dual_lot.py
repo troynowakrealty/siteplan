@@ -41,7 +41,8 @@ def main() -> None:
 
     # Title block
     today = date.today().isoformat()
-    title_y = height - 60
+    # place the title block in the top-left corner
+    title_y = 5
     lines.append("  <!-- Title Block -->")
     lines.append(
         "  " + svg_rect(Rectangle(5, title_y, 300, 50), fill="#f5f5f5", stroke="black")
