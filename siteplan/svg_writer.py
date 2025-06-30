@@ -137,3 +137,17 @@ def svg_header(width: float, height: float, **attrs: object) -> str:
 def svg_footer() -> str:
     """Return closing ``</svg>`` tag."""
     return svg_close("svg")
+
+def write_svg(shapes, output_path):
+    """Render a list of (label, Rectangle) and save as an SVG file."""
+    width = 2 * 46  # 2 lots wide
+    height = 124    # max lot depth
+
+    with open(output_path, 'w') as f:
+        f.write(svg_header(width=width, height=height, viewBox=f"0 0 {width} {height}") + "\n")
+        for label, rect in shapes:
+            f.write(svg_rect(rect, fill="none", stroke="black") + "\n")
+            label_x = rect.x + 1
+            label_y = rect.y + 3
+            f.write(f"<text x='{label_x}' y='{label_y}' font-size='2'>{label}</text>\n")
+        f.write(svg_footer() + "\n")

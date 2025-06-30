@@ -1,0 +1,31 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='9in' height='11in' viewBox='0 0 46.76 110.22'>
+<rect x='0' y='0' width='46.76' height='110.22' stroke='black' fill='none' stroke_width='2' />
+<rect x='8.379999999999999' y='18' width='33' height='28' stroke='black' fill='#f2f2f2' stroke_width='1.5' />
+<text x='18.38' y='33' font-size='1.5'>Front Duplex (2-story)</text>
+<text x='10.379999999999999' y='26' font-size='1.5'>Unit A</text>
+<text x='28.38' y='26' font-size='1.5'>Unit B</text>
+<text x='18.38' y='44' font-size='1.5'>33′ × 28′</text>
+<rect x='10.379999999999999' y='12' width='8.5' height='6' stroke='blue' fill='none' stroke_dasharray='2,2' />
+<rect x='30.88' y='12' width='8.5' height='6' stroke='blue' fill='none' stroke_dasharray='2,2' />
+<text x='10.879999999999999' y='15' font-size='1.5'>Porch A</text>
+<text x='31.38' y='15' font-size='1.5'>Porch B</text>
+<line x1='14.379999999999999' y1='17' x2='15.379999999999999' y2='17' stroke='black' stroke-width='0.5' />
+<line x1='34.879999999999995' y1='17' x2='35.879999999999995' y2='17' stroke='black' stroke-width='0.5' />
+<rect x='8' y='68' width='30' height='20' stroke='black' fill='#e0ffe0' stroke_width='1.5' />
+<text x='10' y='78' font-size='1.5'>Garage + ADU</text>
+<text x='14' y='86' font-size='1.5'>30′ × 20′</text>
+<line x1='36' y1='78' x2='36' y2='79' stroke='black' stroke-width='0.5' />
+<rect x='8' y='92.22' width='9' height='18' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='10' y='101.22' font-size='1.5'>P1</text>
+<rect x='17' y='92.22' width='9' height='18' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='19' y='101.22' font-size='1.5'>P2</text>
+<rect x='26' y='92.22' width='9' height='18' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='28' y='101.22' font-size='1.5'>P3</text>
+<text x='8' y='111' font-size='1.5'>Parking - 3′ ROW offset</text>
+<rect x='35' y='92.22' width='6' height='18' stroke='brown' fill='none' stroke_dasharray='3,2' />
+<text x='35.5' y='100' font-size='1.5'>Trash Pad</text>
+<polygon points='45,5 46,2 47,5' fill='black'>
+<text x='45.5' y='7' font-size='1.5'>N</text>
+<text x='1' y='-2' font-size='1.5'>Site Plan – Lot 1, 2946 22nd Ave S</text>
+<text x='1' y='-0.5' font-size='1.5'>Date: June 2025 | Scale: 1" = 10′</text>
+</svg>

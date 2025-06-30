@@ -1,0 +1,33 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='9in' height='11in' viewBox='0 0 46.76 110.22'>
+<line x1='0' y1='18' x2='46.76' y2='18' stroke='red' stroke_dasharray='4,2' /><text x='1' y='17.5' font-size='1.2'>18′ Front</text>
+<line x1='0' y1='99.22' x2='46.76' y2='99.22' stroke='red' stroke_dasharray='4,2' /><text x='1' y='98.72' font-size='1.2'>11′ Rear</text>
+<line x1='8' y1='0' x2='8' y2='110.22' stroke='red' stroke_dasharray='4,2' /><text x='8.3' y='1' font-size='1.2' transform='rotate(-90,8.3,1)'>8′ Side</text>
+<line x1='41.76' y1='0' x2='41.76' y2='110.22' stroke='red' stroke_dasharray='4,2' /><text x='42.059999999999995' y='1' font-size='1.2' transform='rotate(-90,42.059999999999995,1)'>5′ Interior</text>
+<rect x='0' y='0' width='46.76' height='110.22' stroke='black' fill='none' stroke_width='2' />
+<rect x='8.379999999999999' y='18' width='33' height='28' stroke='black' fill='#f2f2f2' stroke_width='1.5' /><text x='13.379999999999999' y='40' font-size='1.2'>Front Duplex (2‑story)</text>
+<text x='10.379999999999999' y='26' font-size='1.2'>Unit A</text>
+<text x='28.38' y='26' font-size='1.2'>Unit B</text>
+<path d='M12.38,27.00 A3,3 0 0,1 15.38,30.00' stroke='black' fill='none' stroke-width='0.5'/>
+<path d='M34.38,30.00 A3,3 0 0,1 37.38,33.00' stroke='black' fill='none' stroke-width='0.5'/>
+<rect x='10.379999999999999' y='12' width='8.5' height='6' stroke='black' fill='none' stroke_dasharray='2,2' /><rect x='30.88' y='12' width='8.5' height='6' stroke='black' fill='none' stroke_dasharray='2,2' /><rect x='8' y='68' width='30' height='20' stroke='black' fill='#dcedc8' stroke_width='1.5' /><text x='13' y='78' font-size='1.2'>Garage + ADU</text>
+<path d='M36.00,81.00 A3,3 0 0,1 39.00,78.00' stroke='black' fill='none' stroke-width='0.5'/>
+<rect x='8' y='91.22' width='9' height='18' stroke='gold' fill='none' stroke_width='1' /><text x='10' y='101.22' font-size='1.2'>P1</text>
+<rect x='17' y='91.22' width='9' height='18' stroke='gold' fill='none' stroke_width='1' /><text x='19' y='101.22' font-size='1.2'>P2</text>
+<rect x='26' y='91.22' width='9' height='18' stroke='gold' fill='none' stroke_width='1' /><text x='28' y='101.22' font-size='1.2'>P3</text>
+<text x='1' y='109' font-size='1.2'>Parking setbacks + driveway width meets 10–20′</text>
+<rect x='35' y='91.22' width='6' height='18' stroke='brown' fill='none' stroke_dasharray='3,2' /><text x='35.5' y='100' font-size='1.2'>Trash Pad 6′×20′</text>
+<circle cx='45' cy='10' r='3' stroke='black' fill='none' stroke_width='0.5' /><polygon points='45,6 44,10 46,10' fill='black' /><text x='45' y='15' font-size='1.5'>N</text>
+<line x1='2' y1='112.22' x2='12' y2='112.22' stroke='black' stroke_width='0.5' /><line x1='2' y1='112.02' x2='2' y2='112.42' stroke='black' stroke_width='0.5' /><line x1='7' y1='112.02' x2='7' y2='112.42' stroke='black' stroke_width='0.5' /><line x1='12' y1='112.02' x2='12' y2='112.42' stroke='black' stroke_width='0.5' /><text x='1.5' y='114.22' font-size='1.2'>0′</text>
+<text x='7' y='114.22' font-size='1.2'>5′</text>
+<text x='12' y='114.22' font-size='1.2'>10′</text>
+<text x='2' y='115.22' font-size='1.2'>Scale: 1" = 10′</text>
+<text x='1' y='-2' font-size='1.2'>Site Plan – Lot 1, 2946 22nd Ave S</text>
+<text x='1' y='-0.5' font-size='1.2'>Date: June 2025 | Blueprint‑style</text>
+<rect x='28.759999999999998' y='115.22' width='17' height='5' stroke='black' fill='none' stroke_width='0.5' /><text x='28.959999999999997' y='116.72' font-size='1.2'>Scale: 1" = 10′</text>
+<text x='28.959999999999997' y='118.22' font-size='1.2'>FAR 1,524/2,886 ft²</text>
+<rect x='2' y='121.22' width='1' height='1' stroke='black' fill='#f2f2f2' stroke_width='0.5' /><text x='4' y='122.02' font-size='1.2'>Building</text>
+<rect x='2' y='122.22' width='1' height='1' stroke='black' fill='#dcedc8' stroke_width='0.5' /><text x='4' y='123.02' font-size='1.2'>ADU</text>
+<rect x='2' y='123.22' width='1' height='1' stroke='black' fill='none' stroke_width='0.5' /><text x='4' y='124.02' font-size='1.2'>Porch</text>
+<rect x='2' y='124.22' width='1' height='1' stroke='black' fill='none' stroke_width='0.5' /><text x='4' y='125.02' font-size='1.2'>Park</text>
+<rect x='2' y='125.22' width='1' height='1' stroke='black' fill='none' stroke_width='0.5' /><text x='4' y='126.02' font-size='1.2'>Trash</text>
+</svg>

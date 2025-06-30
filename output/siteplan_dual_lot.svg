@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg xmlns='http://www.w3.org/2000/svg' width='917.6' height='1102.2'>
   <!-- Title Block -->
   <rect x='5' y='5' width='300' height='50' fill='#f5f5f5' stroke='black' />
@@ -95,4 +96,35 @@
   <text x='420.0' y='960.0' text-anchor='middle' font-size='10'>Trash Pad (6' × 20')</text>
   <rect x='880' y='860' width='60' height='200' fill='#deb887' stroke='black' />
   <text x='910.0' y='960.0' text-anchor='middle' font-size='10'>Trash Pad (6' × 20')</text>
+=======
+<svg xmlns='http://www.w3.org/2000/svg' width='92' height='124' viewBox='0 0 92 124'>
+<rect x='0' y='0' width='46' height='124' fill='none' stroke='black' />
+<text x='1' y='3' font-size='2'>lot</text>
+<rect x='6.5' y='18' width='33' height='28' fill='none' stroke='black' />
+<text x='7.5' y='21' font-size='2'>Lot 1 Front Unit</text>
+<rect x='8.0' y='82' width='30' height='20' fill='none' stroke='black' />
+<text x='9.0' y='85' font-size='2'>Lot 1 Garage/ADU</text>
+<rect x='0' y='104' width='9' height='20' fill='none' stroke='black' />
+<text x='1' y='107' font-size='2'>Lot 1 Parking 1</text>
+<rect x='9' y='104' width='9' height='20' fill='none' stroke='black' />
+<text x='10' y='107' font-size='2'>Lot 1 Parking 2</text>
+<rect x='18' y='104' width='9' height='20' fill='none' stroke='black' />
+<text x='19' y='107' font-size='2'>Lot 1 Parking 3</text>
+<rect x='27' y='104' width='6' height='20' fill='none' stroke='black' />
+<text x='28' y='107' font-size='2'>Lot 1 Trash Pad</text>
+<rect x='46' y='0' width='46' height='124' fill='none' stroke='black' />
+<text x='47' y='3' font-size='2'>lot</text>
+<rect x='52.5' y='18' width='33' height='28' fill='none' stroke='black' />
+<text x='53.5' y='21' font-size='2'>Lot 2 Front Unit</text>
+<rect x='54.0' y='82' width='30' height='20' fill='none' stroke='black' />
+<text x='55.0' y='85' font-size='2'>Lot 2 Garage/ADU</text>
+<rect x='46' y='104' width='9' height='20' fill='none' stroke='black' />
+<text x='47' y='107' font-size='2'>Lot 2 Parking 1</text>
+<rect x='55' y='104' width='9' height='20' fill='none' stroke='black' />
+<text x='56' y='107' font-size='2'>Lot 2 Parking 2</text>
+<rect x='64' y='104' width='9' height='20' fill='none' stroke='black' />
+<text x='65' y='107' font-size='2'>Lot 2 Parking 3</text>
+<rect x='73' y='104' width='6' height='20' fill='none' stroke='black' />
+<text x='74' y='107' font-size='2'>Lot 2 Trash Pad</text>
+>>>>>>> 26d5881 (Add ADU stairs, A/C pads, and dimension lines; generate updated siteplan SVG)
 </svg>
