@@ -39,3 +39,13 @@ Execute the automated tests with `pytest`:
 ```bash
 pytest
 ```
+
+## Examples
+
+Generate a duplex and ADU layout from a multi-line prompt:
+
+```bash
+python examples/duplex_adu.py
+```
+
+The resulting SVG will be written to `output/examples/duplex_adu.svg`.
