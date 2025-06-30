@@ -3,9 +3,89 @@ from __future__ import annotations
 from pathlib import Path
 
 from siteplan.geometry import Point, Rectangle
-from siteplan.svg_writer import svg_footer, svg_header, svg_line, svg_polygon, svg_rect
+from siteplan.svg_writer import (
+    svg_footer,
+    svg_header,
+    svg_line,
+    svg_polygon,
+    svg_rect,
+    svg_text,
+)
 
 SCALE = 10
+
+
+def dim_horizontal(x1: float, x2: float, y: float, text: str) -> str:
+    """Return SVG elements for a horizontal dimension line with arrows."""
+    elements: list[str] = []
+    elements.append(
+        svg_line(
+            Point(x1, y),
+            Point(x2, y),
+            stroke="black",
+            **{"stroke-dasharray": "4,2"},
+        )
+    )
+    arrow = 5
+    elements.append(
+        svg_polygon(
+            [Point(x1, y - arrow), Point(x1, y + arrow), Point(x1 - arrow, y)],
+            fill="black",
+        )
+    )
+    elements.append(
+        svg_polygon(
+            [Point(x2, y - arrow), Point(x2, y + arrow), Point(x2 + arrow, y)],
+            fill="black",
+        )
+    )
+    elements.append(
+        svg_text(
+            (x1 + x2) / 2,
+            y - 6,
+            text,
+            fill="black",
+            **{"font-size": 10, "font-family": "sans-serif", "text-anchor": "middle"},
+        )
+    )
+    return "\n".join(elements)
+
+
+def dim_vertical(x: float, y1: float, y2: float, text: str) -> str:
+    """Return SVG elements for a vertical dimension line with arrows."""
+    elements: list[str] = []
+    elements.append(
+        svg_line(
+            Point(x, y1),
+            Point(x, y2),
+            stroke="black",
+            **{"stroke-dasharray": "4,2"},
+        )
+    )
+    arrow = 5
+    elements.append(
+        svg_polygon(
+            [Point(x - arrow, y1), Point(x + arrow, y1), Point(x, y1 - arrow)],
+            fill="black",
+        )
+    )
+    elements.append(
+        svg_polygon(
+            [Point(x - arrow, y2), Point(x + arrow, y2), Point(x, y2 + arrow)],
+            fill="black",
+        )
+    )
+    elements.append(
+        svg_text(
+            x + 6,
+            (y1 + y2) / 2,
+            text,
+            fill="black",
+            transform=f"rotate(-90 {x + 6},{(y1 + y2) / 2})",
+            **{"font-size": 10, "font-family": "sans-serif", "text-anchor": "middle"},
+        )
+    )
+    return "\n".join(elements)
 
 
 def main() -> None:
@@ -136,34 +216,38 @@ def main() -> None:
         svg_rect(Rectangle(518.8, adu_y, adu_w, adu_h), fill="green", stroke="black")
     )
 
-    # A/C units
+    # A/C units and stairs
     ac_size = 30
-    for adu_x in (93.8, 518.8):
-        lines.append(
-            svg_rect(
-                Rectangle(adu_x + adu_w + 10, adu_y + 20, ac_size, ac_size),
-                fill="gray",
-                stroke="black",
-            )
+    stair_w = 30
+    stair_d = 60
+    lines.append(
+        svg_rect(
+            Rectangle(393.8, adu_y, stair_w, stair_d),
+            fill="#999999",
+            stroke="black",
         )
-
-    # Stairs
-    for adu_x in (93.8, 518.8):
-        base_x = adu_x + adu_w / 2
-        base_y = adu_y + adu_h
-        lines.append(
-            svg_line(Point(base_x, base_y), Point(base_x, base_y + 20), stroke="black")
+    )
+    lines.append(
+        svg_rect(
+            Rectangle(788.8, adu_y, stair_w, stair_d),
+            fill="#999999",
+            stroke="black",
         )
-        lines.append(
-            svg_polygon(
-                [
-                    Point(base_x - 5, base_y + 20),
-                    Point(base_x + 5, base_y + 20),
-                    Point(base_x, base_y + 30),
-                ],
-                fill="black",
-            )
+    )
+    lines.append(
+        svg_rect(
+            Rectangle(393.8, adu_y + 40, ac_size, ac_size),
+            fill="#cccccc",
+            stroke="black",
         )
+    )
+    lines.append(
+        svg_rect(
+            Rectangle(788.8, adu_y + 40, ac_size, ac_size),
+            fill="#cccccc",
+            stroke="black",
+        )
+    )
 
     # Parking pads
     pad_w = 9 * SCALE
@@ -186,6 +270,55 @@ def main() -> None:
     lines.append(
         svg_rect(
             Rectangle(880, trash_y, trash_w, trash_h), fill="brown", stroke="black"
+        )
+    )
+
+    # Dimension lines
+    lines.append(dim_horizontal(0, center_x, 30, "Lot 2 Width: 45′"))
+    lines.append(dim_horizontal(center_x, width, 30, "Lot 1 Width: 46.76′"))
+    lines.append(dim_vertical(width - 20, 0, height, "Depth: 110.22′"))
+    duplex_back = front_y + duplex_h
+    lines.append(dim_vertical(243.8, duplex_back, adu_y, "20′ Building Separation"))
+    lines.append(dim_vertical(668.8, duplex_back, adu_y, "20′ Building Separation"))
+    lines.append(dim_horizontal(0, 80, front_y + duplex_h / 2, "8′ Side Setback"))
+    lines.append(
+        dim_horizontal(
+            center_x - 50,
+            87.8 + duplex_w,
+            front_y + duplex_h / 2,
+            "5′ Side Setback",
+        )
+    )
+    lines.append(
+        dim_horizontal(
+            center_x,
+            517.6,
+            front_y + duplex_h / 2,
+            "5′ Side Setback",
+        )
+    )
+    lines.append(
+        dim_horizontal(
+            width - 50,
+            517.6 + duplex_w,
+            front_y + duplex_h / 2,
+            "5′ Side Setback",
+        )
+    )
+    lines.append(
+        dim_vertical(
+            67.8 + porch_w / 2,
+            porch_y,
+            front_y,
+            "6′ Porch Offset (Encroaches)",
+        )
+    )
+    lines.append(
+        dim_vertical(
+            502.6 + porch_w / 2,
+            porch_y,
+            front_y,
+            "6′ Porch Offset (Encroaches)",
         )
     )
 

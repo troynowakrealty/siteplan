@@ -9,7 +9,7 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     svg = Path("output/siteplan_dual_lot.svg")
     assert svg.exists()
     content = svg.read_text()
-    # At least ten rectangles should be drawn for lots and features
+    # Ensure basic shapes and dimension labels exist
     assert content.count("<rect") >= 10
-    # No text labels should appear in the output
-    assert "<text" not in content
+    assert "Lot 2 Width" in content
+    assert "Lot 1 Width" in content
