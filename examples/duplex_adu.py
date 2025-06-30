@@ -12,8 +12,8 @@ place adu 20x20 at 50,0
 
 def main() -> None:
     layout = Layout()
-    for rect in parse_prompt(PROMPT):
-        layout.add_shape(rect)
+    for placement in parse_prompt(PROMPT):
+        layout.add_shape(placement.rect)
     separate_shapes(layout)
     layout.export_svg(Path("output/examples/duplex_adu.svg"))
 

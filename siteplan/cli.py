@@ -11,9 +11,9 @@ from .prompt_parser import parse_prompt
 def main(output: str = "output/siteplan.svg", prompt: str | None = None) -> None:
     layout = Layout()
     if prompt:
-        rects = parse_prompt(prompt)
-        for r in rects:
-            layout.add_shape(r)
+        placements = parse_prompt(prompt)
+        for p in placements:
+            layout.add_shape(p.rect)
     else:
         layout.add_shape(Rectangle(0, 0, 100, 50))
         layout.add_shape(Rectangle(120, 0, 80, 40))
