@@ -1,0 +1,77 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='917.6' height='1102.2'>
+<rect x='0' y='0' width='467.6' height='1102.2' fill='none' stroke='black' stroke-width='2' />
+<rect x='467.6' y='0' width='450.0' height='1101.1' fill='none' stroke='black' stroke-width='2' />
+<line x1='467.6' y1='0' x2='467.6' y2='1102.2' stroke='black' />
+<line x1='0' y1='180' x2='467.6' y2='180' stroke='blue' stroke-dasharray='5,5' />
+<line x1='0' y1='991.2' x2='467.6' y2='991.2' stroke='blue' stroke-dasharray='5,5' />
+<line x1='467.6' y1='180' x2='917.6' y2='180' stroke='blue' stroke-dasharray='5,5' />
+<line x1='467.6' y1='991.2' x2='917.6' y2='991.2' stroke='blue' stroke-dasharray='5,5' />
+<line x1='80' y1='0' x2='80' y2='1102.2' stroke='blue' stroke-dasharray='5,5' />
+<line x1='417.6' y1='0' x2='417.6' y2='1102.2' stroke='blue' stroke-dasharray='5,5' />
+<line x1='517.6' y1='0' x2='517.6' y2='1101.1' stroke='blue' stroke-dasharray='5,5' />
+<line x1='867.6' y1='0' x2='867.6' y2='1101.1' stroke='blue' stroke-dasharray='5,5' />
+<rect x='87.8' y='180' width='330' height='280' fill='blue' stroke='black' />
+<rect x='517.6' y='180' width='330' height='280' fill='blue' stroke='black' />
+<rect x='67.8' y='120' width='60' height='100' fill='blue' stroke='black' />
+<rect x='237.8' y='120' width='60' height='100' fill='blue' stroke='black' />
+<rect x='502.6' y='120' width='60' height='100' fill='blue' stroke='black' />
+<rect x='672.6' y='120' width='60' height='100' fill='blue' stroke='black' />
+<rect x='93.8' y='660' width='300' height='200' fill='green' stroke='black' />
+<rect x='518.8' y='660' width='300' height='200' fill='green' stroke='black' />
+<rect x='393.8' y='660' width='30' height='60' fill='#999999' stroke='black' />
+<rect x='788.8' y='660' width='30' height='60' fill='#999999' stroke='black' />
+<rect x='393.8' y='700' width='30' height='30' fill='#cccccc' stroke='black' />
+<rect x='788.8' y='700' width='30' height='30' fill='#cccccc' stroke='black' />
+<rect x='93.8' y='860' width='90' height='200' fill='yellow' stroke='black' />
+<rect x='193.8' y='860' width='90' height='200' fill='yellow' stroke='black' />
+<rect x='293.8' y='860' width='90' height='200' fill='yellow' stroke='black' />
+<rect x='518.8' y='860' width='90' height='200' fill='yellow' stroke='black' />
+<rect x='618.8' y='860' width='90' height='200' fill='yellow' stroke='black' />
+<rect x='718.8' y='860' width='90' height='200' fill='yellow' stroke='black' />
+<rect x='390' y='860' width='60' height='200' fill='brown' stroke='black' />
+<rect x='880' y='860' width='60' height='200' fill='brown' stroke='black' />
+<line x1='0' y1='30' x2='467.6' y2='30' stroke='black' stroke-dasharray='4,2' />
+<polygon points='0,25 0,35 -5,30' fill='black' />
+<polygon points='467.6,25 467.6,35 472.6,30' fill='black' />
+<text x='233.8' y='24' fill='black' font-size='10' font-family='sans-serif' text-anchor='middle'>Lot 2 Width: 45′</text>
+<line x1='467.6' y1='30' x2='917.6' y2='30' stroke='black' stroke-dasharray='4,2' />
+<polygon points='467.6,25 467.6,35 462.6,30' fill='black' />
+<polygon points='917.6,25 917.6,35 922.6,30' fill='black' />
+<text x='692.6' y='24' fill='black' font-size='10' font-family='sans-serif' text-anchor='middle'>Lot 1 Width: 46.76′</text>
+<line x1='897.6' y1='0' x2='897.6' y2='1102.2' stroke='black' stroke-dasharray='4,2' />
+<polygon points='892.6,0 902.6,0 897.6,-5' fill='black' />
+<polygon points='892.6,1102.2 902.6,1102.2 897.6,1107.2' fill='black' />
+<text x='903.6' y='551.1' fill='black' transform='rotate(-90 903.6,551.1)' font-size='10' font-family='sans-serif' text-anchor='middle'>Depth: 110.22′</text>
+<line x1='243.8' y1='460' x2='243.8' y2='660' stroke='black' stroke-dasharray='4,2' />
+<polygon points='238.8,460 248.8,460 243.8,455' fill='black' />
+<polygon points='238.8,660 248.8,660 243.8,665' fill='black' />
+<text x='249.8' y='560.0' fill='black' transform='rotate(-90 249.8,560.0)' font-size='10' font-family='sans-serif' text-anchor='middle'>20′ Building Separation</text>
+<line x1='668.8' y1='460' x2='668.8' y2='660' stroke='black' stroke-dasharray='4,2' />
+<polygon points='663.8,460 673.8,460 668.8,455' fill='black' />
+<polygon points='663.8,660 673.8,660 668.8,665' fill='black' />
+<text x='674.8' y='560.0' fill='black' transform='rotate(-90 674.8,560.0)' font-size='10' font-family='sans-serif' text-anchor='middle'>20′ Building Separation</text>
+<line x1='0' y1='320.0' x2='80' y2='320.0' stroke='black' stroke-dasharray='4,2' />
+<polygon points='0,315.0 0,325.0 -5,320.0' fill='black' />
+<polygon points='80,315.0 80,325.0 85,320.0' fill='black' />
+<text x='40.0' y='314.0' fill='black' font-size='10' font-family='sans-serif' text-anchor='middle'>8′ Side Setback</text>
+<line x1='417.6' y1='320.0' x2='417.8' y2='320.0' stroke='black' stroke-dasharray='4,2' />
+<polygon points='417.6,315.0 417.6,325.0 412.6,320.0' fill='black' />
+<polygon points='417.8,315.0 417.8,325.0 422.8,320.0' fill='black' />
+<text x='417.70000000000005' y='314.0' fill='black' font-size='10' font-family='sans-serif' text-anchor='middle'>5′ Side Setback</text>
+<line x1='467.6' y1='320.0' x2='517.6' y2='320.0' stroke='black' stroke-dasharray='4,2' />
+<polygon points='467.6,315.0 467.6,325.0 462.6,320.0' fill='black' />
+<polygon points='517.6,315.0 517.6,325.0 522.6,320.0' fill='black' />
+<text x='492.6' y='314.0' fill='black' font-size='10' font-family='sans-serif' text-anchor='middle'>5′ Side Setback</text>
+<line x1='867.6' y1='320.0' x2='847.6' y2='320.0' stroke='black' stroke-dasharray='4,2' />
+<polygon points='867.6,315.0 867.6,325.0 862.6,320.0' fill='black' />
+<polygon points='847.6,315.0 847.6,325.0 852.6,320.0' fill='black' />
+<text x='857.6' y='314.0' fill='black' font-size='10' font-family='sans-serif' text-anchor='middle'>5′ Side Setback</text>
+<line x1='97.8' y1='120' x2='97.8' y2='180' stroke='black' stroke-dasharray='4,2' />
+<polygon points='92.8,120 102.8,120 97.8,115' fill='black' />
+<polygon points='92.8,180 102.8,180 97.8,185' fill='black' />
+<text x='103.8' y='150.0' fill='black' transform='rotate(-90 103.8,150.0)' font-size='10' font-family='sans-serif' text-anchor='middle'>6′ Porch Offset (Encroaches)</text>
+<line x1='532.6' y1='120' x2='532.6' y2='180' stroke='black' stroke-dasharray='4,2' />
+<polygon points='527.6,120 537.6,120 532.6,115' fill='black' />
+<polygon points='527.6,180 537.6,180 532.6,185' fill='black' />
+<text x='538.6' y='150.0' fill='black' transform='rotate(-90 538.6,150.0)' font-size='10' font-family='sans-serif' text-anchor='middle'>6′ Porch Offset (Encroaches)</text>
+</svg>
