@@ -53,6 +53,28 @@ def svg_polygon(points: Iterable[Point], **attrs: object) -> str:
     return svg_tag("polygon", self_close=True, **poly_attrs)
 
 
+def svg_text(x: float, y: float, text: str, **attrs: object) -> str:
+    """Generate a ``<text>`` element."""
+    text_attrs = {"x": x, "y": y}
+    text_attrs.update(attrs)
+    attr_str = _attrs_to_str(text_attrs)
+    return f"<text {attr_str}>{text}</text>"
+
+
+def svg_grid(width: float, height: float, spacing: float = 100) -> str:
+    """Generate light gridlines for the plan."""
+    lines = []
+    x = 0
+    while x <= width:
+        lines.append(svg_line(Point(x, 0), Point(x, height), stroke="#ddd"))
+        x += spacing
+    y = 0
+    while y <= height:
+        lines.append(svg_line(Point(0, y), Point(width, y), stroke="#ddd"))
+        y += spacing
+    return "\n".join(lines)
+
+
 def svg_header(width: float, height: float, **attrs: object) -> str:
     """Return the opening ``<svg>`` tag with namespace and size."""
     header_attrs = {"xmlns": SVG_NS, "width": width, "height": height}
