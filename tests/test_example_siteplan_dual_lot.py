@@ -14,3 +14,6 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "Front Duplex" in content
     assert "Porch A" in content
     assert "Side Door" in content
+    assert "Garage with ADU" in content
+    assert "P1" in content
+    assert "Trash Pad" in content

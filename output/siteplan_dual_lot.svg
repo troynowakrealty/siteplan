@@ -47,4 +47,30 @@
   <text x='532.6' y='170.0' text-anchor='middle' font-size='10'>Porch A (6' × 10')</text>
   <rect x='672.6' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
   <text x='702.6' y='170.0' text-anchor='middle' font-size='10'>Porch B (6' × 10')</text>
+
+  <!-- Garages with ADUs -->
+  <rect x='93.8' y='660' width='300' height='200' fill='#ccffcc' stroke='black' />
+  <text x='243.8' y='760.0' text-anchor='middle' font-size='12'>Garage with ADU (2BR/1BA)</text>
+  <rect x='518.8' y='660' width='300' height='200' fill='#ccffcc' stroke='black' />
+  <text x='668.8' y='760.0' text-anchor='middle' font-size='12'>Garage with ADU (2BR/1BA)</text>
+
+  <!-- Parking Pads -->
+  <rect x='93.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='138.8' y='960.0' text-anchor='middle' font-size='10'>P1</text>
+  <rect x='193.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='238.8' y='960.0' text-anchor='middle' font-size='10'>P2</text>
+  <rect x='293.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='338.8' y='960.0' text-anchor='middle' font-size='10'>P3</text>
+  <rect x='518.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='563.8' y='960.0' text-anchor='middle' font-size='10'>P1</text>
+  <rect x='618.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='663.8' y='960.0' text-anchor='middle' font-size='10'>P2</text>
+  <rect x='718.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='763.8' y='960.0' text-anchor='middle' font-size='10'>P3</text>
+
+  <!-- Trash Pads -->
+  <rect x='390' y='860' width='60' height='200' fill='#deb887' stroke='black' />
+  <text x='420.0' y='960.0' text-anchor='middle' font-size='10'>Trash Pad (6' × 20')</text>
+  <rect x='880' y='860' width='60' height='200' fill='#deb887' stroke='black' />
+  <text x='910.0' y='960.0' text-anchor='middle' font-size='10'>Trash Pad (6' × 20')</text>
 </svg>

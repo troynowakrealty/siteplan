@@ -350,6 +350,136 @@ def main() -> None:
             )
         )
 
+    lines.append("")
+    lines.append("  <!-- Garages with ADUs -->")
+    adu_w = 30 * SCALE
+    adu_h = 20 * SCALE
+    adu_y = duplex_y + duplex_h + 20 * SCALE
+    lot2_adu_x = 93.8
+    lot1_adu_x = 518.8
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(lot2_adu_x, adu_y, adu_w, adu_h),
+            fill="#ccffcc",
+            stroke="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            lot2_adu_x + adu_w / 2,
+            adu_y + adu_h / 2,
+            "Garage with ADU (2BR/1BA)",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(lot1_adu_x, adu_y, adu_w, adu_h),
+            fill="#ccffcc",
+            stroke="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            lot1_adu_x + adu_w / 2,
+            adu_y + adu_h / 2,
+            "Garage with ADU (2BR/1BA)",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+
+    lines.append("")
+    lines.append("  <!-- Parking Pads -->")
+    pad_w = 9 * SCALE
+    pad_h = 20 * SCALE
+    pad_y = adu_y + adu_h
+    lot2_pads = [93.8, 193.8, 293.8]
+    lot1_pads = [518.8, 618.8, 718.8]
+
+    for idx, x in enumerate(lot2_pads, 1):
+        lines.append(
+            "  "
+            + svg_rect(
+                Rectangle(x, pad_y, pad_w, pad_h),
+                fill="#ffff99",
+                stroke="black",
+            )
+        )
+        lines.append(
+            "  "
+            + svg_text(
+                x + pad_w / 2,
+                pad_y + pad_h / 2,
+                f"P{idx}",
+                **{"text-anchor": "middle", "font-size": 10},
+            )
+        )
+
+    for idx, x in enumerate(lot1_pads, 1):
+        lines.append(
+            "  "
+            + svg_rect(
+                Rectangle(x, pad_y, pad_w, pad_h),
+                fill="#ffff99",
+                stroke="black",
+            )
+        )
+        lines.append(
+            "  "
+            + svg_text(
+                x + pad_w / 2,
+                pad_y + pad_h / 2,
+                f"P{idx}",
+                **{"text-anchor": "middle", "font-size": 10},
+            )
+        )
+
+    lines.append("")
+    lines.append("  <!-- Trash Pads -->")
+    trash_w = 6 * SCALE
+    trash_h = 20 * SCALE
+    trash_y = pad_y
+    lot2_trash_x = 390
+    lot1_trash_x = 880
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(lot2_trash_x, trash_y, trash_w, trash_h),
+            fill="#deb887",
+            stroke="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            lot2_trash_x + trash_w / 2,
+            trash_y + trash_h / 2,
+            "Trash Pad (6' × 20')",
+            **{"text-anchor": "middle", "font-size": 10},
+        )
+    )
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(lot1_trash_x, trash_y, trash_w, trash_h),
+            fill="#deb887",
+            stroke="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            lot1_trash_x + trash_w / 2,
+            trash_y + trash_h / 2,
+            "Trash Pad (6' × 20')",
+            **{"text-anchor": "middle", "font-size": 10},
+        )
+    )
+
     lines.append(svg_footer())
     out.write_text("\n".join(lines))
 
