@@ -12,3 +12,5 @@ def test_svg_with_grid(tmp_path: Path):
     content = out_file.read_text()
     assert "<line" in content  # gridlines
     assert "<text" in content  # dimension label
+    assert "stroke-dasharray='4'" in content  # property boundary
+    assert "<polygon" in content  # arrow heads
