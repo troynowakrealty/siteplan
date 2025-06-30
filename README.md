@@ -10,6 +10,14 @@ Install dependencies using pip:
 pip install -r requirements.txt
 ```
 
+Interactive features such as the checklist mode use the optional `pexpect`
+package. Install it separately if you plan to run those features or their
+corresponding tests:
+
+```bash
+pip install pexpect
+```
+
 ## Running the CLI
 
 Generate a simple site plan SVG:
@@ -28,6 +36,25 @@ Or read the prompt from a file using the `@` prefix:
 
 ```bash
 python -m siteplan.cli output/siteplan.svg --prompt @prompt.txt
+```
+
+### Interactive Checklist Mode
+
+Use `--interactive-checklist` to step through shape placement interactively. The
+CLI will prompt you for each rectangle and confirm before writing to the output
+SVG:
+
+```bash
+python -m siteplan.cli output/siteplan.svg --interactive-checklist
+```
+
+### Adjusting Font Size
+
+To scale the dimension labels, pass `--font-scale` with the desired multiplier
+(for example, `--font-scale 1.5` for 50% larger text):
+
+```bash
+python -m siteplan.cli output/siteplan.svg --font-scale 1.5
 ```
 
 ### Appending to an Existing Layout
