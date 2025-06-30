@@ -17,3 +17,5 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "Garage with ADU" in content
     assert "P1" in content
     assert "Trash Pad" in content
+    assert "North" in content
+    assert "Zoning: NT-M1" in content

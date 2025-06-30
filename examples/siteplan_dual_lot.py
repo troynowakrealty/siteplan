@@ -3,7 +3,17 @@ from __future__ import annotations
 from pathlib import Path
 
 from siteplan.geometry import Point, Rectangle
-from siteplan.svg_writer import svg_footer, svg_header, svg_line, svg_rect, svg_text
+from datetime import date
+
+from siteplan.svg_writer import (
+    svg_boundary,
+    svg_footer,
+    svg_header,
+    svg_line,
+    svg_polygon,
+    svg_rect,
+    svg_text,
+)
 
 SCALE = 10
 
@@ -28,6 +38,56 @@ def main() -> None:
 
     lines = []
     lines.append(svg_header(width, height))
+
+    # Title block
+    today = date.today().isoformat()
+    title_y = height - 60
+    lines.append("  <!-- Title Block -->")
+    lines.append(
+        "  " + svg_rect(Rectangle(5, title_y, 300, 50), fill="#f5f5f5", stroke="black")
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            10,
+            title_y + 20,
+            "Site Plan \u2013 Lot 1 & Lot 2 (NT-M1)",
+            **{"font-size": 14, "font-family": "sans-serif"},
+        )
+    )
+
+    # North arrow
+    lines.append("  <!-- North Arrow -->")
+    arrow_top = 40
+    lines.append(
+        "  "
+        + svg_polygon(
+            [
+                Point(width / 2, arrow_top),
+                Point(width / 2 - 10, arrow_top + 20),
+                Point(width / 2 + 10, arrow_top + 20),
+            ],
+            fill="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            width / 2,
+            arrow_top + 35,
+            "North",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            10,
+            title_y + 40,
+            f"Prepared: {today}",
+            **{"font-size": 12, "font-family": "sans-serif"},
+        )
+    )
 
     # Lot 2 - left side
     lines.append("  <!-- Lot 2 -->")
@@ -198,6 +258,23 @@ def main() -> None:
         )
     )
 
+    lines.append("")
+    lines.append("  <!-- Buildable Areas -->")
+    buildable2 = Rectangle(lot2_left, front_y, lot2_right - lot2_left, rear_y - front_y)
+    buildable1 = Rectangle(lot1_left, front_y, lot1_right - lot1_left, rear_y - front_y)
+    lines.append(
+        "  "
+        + svg_boundary(
+            buildable2, offset=0, stroke="gray", **{"stroke-dasharray": "4 4"}
+        )
+    )
+    lines.append(
+        "  "
+        + svg_boundary(
+            buildable1, offset=0, stroke="gray", **{"stroke-dasharray": "4 4"}
+        )
+    )
+
     # Center divider
     lines.append("  <!-- Divider -->")
     lines.append(
@@ -234,12 +311,40 @@ def main() -> None:
         )
     )
 
+    scale_bar_y = height - 40
+    lines.append(
+        "  "
+        + svg_line(
+            Point(width - 160, scale_bar_y),
+            Point(width - 60, scale_bar_y),
+            stroke="black",
+            **{"stroke-width": 2},
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            width - 110,
+            scale_bar_y - 5,
+            "10'",
+            **{"text-anchor": "middle", "font-size": 10},
+        )
+    )
     lines.append(
         "  "
         + svg_text(
             width - 5,
-            height - 5,
+            scale_bar_y - 15,
             "Scale 1\" = 10'",
+            **{"text-anchor": "end", "font-size": 12},
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            width - 5,
+            scale_bar_y + 15,
+            "Zoning: NT-M1 \u2013 Setback Compliant",
             **{"text-anchor": "end", "font-size": 12},
         )
     )
