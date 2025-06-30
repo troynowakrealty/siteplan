@@ -1,0 +1,68 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='9in' height='11in' viewBox='0 0 46.76 110.22'>
+<rect x='0' y='0' width='46.76' height='110.22' stroke='black' fill='none' stroke_width='2' />
+<text x='14.379999999999999' y='-2' font-size='1.2'>22nd Ave S (Front)</text>
+<text x='-2' y='55.11' font-size='1.2' transform='rotate(-90,-2,55.11)'>30th St S (Side)</text>
+<text x='23.38' y='113.22' font-size='1.2'>Alley</text>
+<line x1='0' y1='18' x2='46.76' y2='18' stroke='red' stroke_dasharray='4,2' />
+<text x='1' y='17.5' font-size='1.2'>18′ Front Setback</text>
+<line x1='0' y1='99.22' x2='46.76' y2='99.22' stroke='red' stroke_dasharray='4,2' />
+<text x='1' y='98.72' font-size='1.2'>11′ Rear Setback</text>
+<line x1='8' y1='0' x2='8' y2='110.22' stroke='red' stroke_dasharray='4,2' />
+<text x='8.5' y='1' font-size='1.2' transform='rotate(-90,8.5,1)'>8′ Side Setback</text>
+<line x1='41.76' y1='0' x2='41.76' y2='110.22' stroke='red' stroke_dasharray='4,2' />
+<text x='42.26' y='1' font-size='1.2' transform='rotate(-90,42.26,1)'>5′ Interior Setback</text>
+<rect x='8.379999999999999' y='18' width='33' height='28' stroke='black' fill='#f2f2f2' stroke_width='0.5' />
+<text x='10.379999999999999' y='32' font-size='1.2'>Front Duplex (2-story)</text>
+<text x='10.379999999999999' y='26' font-size='1.2'>Unit A</text>
+<text x='26.38' y='26' font-size='1.2'>Unit B</text>
+<text x='18.38' y='44' font-size='1.2'>33′×28′</text>
+<rect x='8' y='12' width='10' height='6' stroke='blue' fill='none' stroke_dasharray='2,2' />
+<text x='9' y='16' font-size='1.2'>Porch (encroachment allowed)</text>
+<rect x='31' y='12' width='10' height='6' stroke='blue' fill='none' stroke_dasharray='2,2' />
+<text x='32' y='16' font-size='1.2'>Porch (encroachment allowed)</text>
+<rect x='8' y='70' width='30' height='20' stroke='black' fill='#dcedc8' stroke_width='0.5' />
+<text x='9' y='78' font-size='1.2'>Garage w/ ADU (2BR/1BA)</text>
+<text x='16' y='88' font-size='1.2'>30′×20′</text>
+<line x1='8' y1='46' x2='8' y2='74' stroke='black' stroke_width='0.2' />
+<polygon points='8,45.5 8.25,45.0 8.5,45.5' fill='black' /><polygon points='8,73.5 8.25,73.0 8.5,73.5' fill='black' /><text x='10' y='60' font-size='1.2'>28′ between structures</text>
+<rect x='8' y='92.22' width='9' height='20' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='9.5' y='102.22' font-size='1.2'>P1</text>
+<rect x='17' y='92.22' width='9' height='20' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='18.5' y='102.22' font-size='1.2'>P2</text>
+<rect x='26' y='92.22' width='9' height='20' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='27.5' y='102.22' font-size='1.2'>P3</text>
+<text x='1' y='86.22' font-size='1.2'>Parking stalls + driveway offset 3′ from ROW</text>
+<text x='1' y='88.22' font-size='1.2'>Driveway width meets 10–20′ standard</text>
+<rect x='35' y='87.22' width='6' height='20' stroke='brown' fill='none' stroke_dasharray='3,2' />
+<text x='35.5' y='97.22' font-size='1.2'>Trash Pad 6′×20′</text>
+<line x1='0' y1='-1' x2='46.76' y2='-1' stroke='black' stroke_width='0.2' />
+<polygon points='0,-1.5 0.25,-2.0 0.5,-1.5' fill='black' /><polygon points='46.76,-1.5 47.01,-2.0 47.26,-1.5' fill='black' /><text x='20.38' y='-2' font-size='1.2'>46.76′ width</text>
+<line x1='47.76' y1='0' x2='47.76' y2='110.22' stroke='black' stroke_width='0.2' />
+<polygon points='47.76,-0.5 48.01,-1.0 48.26,-0.5' fill='black' /><polygon points='47.76,109.72 48.01,109.22 48.26,109.72' fill='black' /><text x='48.76' y='55.11' font-size='1.2' transform='rotate(-90,48.76,55.11)'>110.22′ depth</text>
+<text x='1' y='111.72' font-size='1.2'>FAR used: 1,524 / 2,886 ft² (±200 ft² garage exempt)</text>
+<text x='1' y='110.42' font-size='1.2'>Height: roofline ≤24′, peak ≤36′</text>
+<line x1='2' y1='112.22' x2='12' y2='112.22' stroke='black' stroke_width='0.5' />
+<line x1='2' y1='112.02' x2='2' y2='112.42' stroke='black' stroke_width='0.5' />
+<line x1='7' y1='112.02' x2='7' y2='112.42' stroke='black' stroke_width='0.5' />
+<line x1='12' y1='112.02' x2='12' y2='112.42' stroke='black' stroke_width='0.5' />
+<text x='1.5' y='114.22' font-size='1.2'>0′</text>
+<text x='7' y='114.22' font-size='1.2'>5′</text>
+<text x='12' y='114.22' font-size='1.2'>10′</text>
+<text x='2' y='114.72' font-size='1.2'>Scale: 1" = 10′</text>
+<polygon points='41.76,5 43.26,2 44.76,5' fill='black' /><text x='42.26' y='10' font-size='1.2'>N</text>
+<rect x='28.759999999999998' y='115.22' width='17' height='5' stroke='black' fill='none' stroke_width='0.5' />
+<text x='28.959999999999997' y='116.72' font-size='1.2'>Site Plan – Lot 1</text>
+<text x='28.959999999999997' y='118.22' font-size='1.2'>2946 22nd Ave S</text>
+<text x='28.959999999999997' y='119.72' font-size='1.2'>Date: June 2025 | Scale: 1"=10′</text>
+<rect x='1' y='115.22' width='15' height='5' stroke='black' fill='none' stroke_width='0.5' />
+<rect x='2' y='116.22' width='1' height='1' stroke='black' fill='#f2f2f2' stroke_width='0.5' />
+<text x='4' y='117.02' font-size='1.2'>Building</text>
+<rect x='2' y='117.22' width='1' height='1' stroke='black' fill='#dcedc8' stroke_width='0.5' />
+<text x='4' y='118.02' font-size='1.2'>ADU</text>
+<rect x='2' y='118.22' width='1' height='1' stroke='black' fill='none' stroke_width='0.5' />
+<text x='4' y='119.02' font-size='1.2'>Porch</text>
+<rect x='2' y='119.22' width='1' height='1' stroke='black' fill='none' stroke_width='0.5' />
+<text x='4' y='120.02' font-size='1.2'>Parking</text>
+<rect x='2' y='120.22' width='1' height='1' stroke='black' fill='none' stroke_width='0.5' />
+<text x='4' y='121.02' font-size='1.2'>Trash</text>
+</svg>

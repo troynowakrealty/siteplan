@@ -1,0 +1,24 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='9in' height='11in' viewBox='0 0 46.76 110.22'>
+<rect x='0' y='0' width='46.76' height='110.22' stroke='black' fill='none' stroke_width='2' />
+<line x1='0' y1='18' x2='46.76' y2='18' stroke='red' stroke-width='0.25' stroke-dasharray='4,2'/>
+<text x='1' y='17' font-size='1.5' fill='black'>18′ Front Setback</text><line x1='0' y1='99.22' x2='46.76' y2='99.22' stroke='red' stroke-width='0.25' stroke-dasharray='4,2'/>
+<text x='1' y='98.22' font-size='1.5' fill='black'>11′ Rear Setback</text><line x1='8' y1='0' x2='8' y2='110.22' stroke='red' stroke-width='0.25' stroke-dasharray='4,2'/>
+<text x='8.5' y='5' font-size='1.5' fill='black' transform='rotate(-90,8.5,5)'>8′ Side Setback</text><line x1='41.76' y1='0' x2='41.76' y2='110.22' stroke='red' stroke-width='0.25' stroke-dasharray='4,2'/>
+<text x='42.26' y='5' font-size='1.5' fill='black' transform='rotate(-90,42.26,5)'>5′ Setback</text><rect x='8' y='18' width='33' height='28' stroke='blue' fill='#ddddff' stroke_width='0.5' />
+<text x='10' y='32' font-size='1.5' fill='black'>Front Duplex (2-story)</text><text x='10' y='26' font-size='1.5' fill='black'>Unit A</text><text x='26' y='26' font-size='1.5' fill='black'>Unit B</text><text x='18' y='44' font-size='1.5' fill='black'>33′ × 28′</text><rect x='8' y='12' width='10' height='6' stroke='gray' fill='#cccccc' stroke_dasharray='2,2' />
+<rect x='31' y='12' width='10' height='6' stroke='gray' fill='#cccccc' stroke_dasharray='2,2' />
+<text x='9' y='16' font-size='1.5' fill='black'>Porch A</text><text x='32' y='16' font-size='1.5' fill='black'>Porch B</text><rect x='8' y='74' width='30' height='20' stroke='green' fill='#ddffdd' stroke_width='0.5' />
+<text x='9' y='82' font-size='1.5' fill='black'>Garage with ADU (2BR/1BA)</text><text x='16' y='92' font-size='1.5' fill='black'>30′ × 20′</text><line x1='24.5' y1='46' x2='24.5' y2='74' stroke='black' stroke-width='0.25' stroke-dasharray='2,2'/>
+<text x='25' y='62' font-size='1.5' fill='black'>28′ between structures</text><rect x='8' y='90.22' width='9' height='20' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='9.5' y='100.22' font-size='1.5' fill='black'>P1</text><rect x='17' y='90.22' width='9' height='20' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='18.5' y='100.22' font-size='1.5' fill='black'>P2</text><rect x='26' y='90.22' width='9' height='20' stroke='gold' fill='none' stroke_width='0.5' />
+<text x='27.5' y='100.22' font-size='1.5' fill='black'>P3</text><rect x='35' y='90.22' width='6' height='20' stroke='brown' fill='none' stroke_dasharray='3,2' />
+<text x='35.5' y='100.22' font-size='1.5' fill='black'>Trash Pad 6×20</text><line x1='0' y1='-1' x2='46.76' y2='-1' stroke='black' stroke-width='0.25'/>
+<text x='20.38' y='-2' font-size='1.5' fill='black'>46.76′ width</text><line x1='47.76' y1='0' x2='47.76' y2='110.22' stroke='black' stroke-width='0.25'/>
+<text x='48.76' y='55.11' font-size='1.5' fill='black' transform='rotate(-90,48.76,55.11)'>110.22′ depth</text><line x1='2' y1='112.22' x2='12' y2='112.22' stroke='black' stroke-width='0.5'/>
+<line x1='2' y1='112.02' x2='2' y2='112.42' stroke='black' stroke-width='0.25'/>
+<line x1='7' y1='112.02' x2='7' y2='112.42' stroke='black' stroke-width='0.25'/>
+<line x1='12' y1='112.02' x2='12' y2='112.42' stroke='black' stroke-width='0.25'/>
+<text x='1.5' y='113.72' font-size='1.5' fill='black'>Scale: 1" = 10′</text><text x='2' y='113.22' font-size='1.5' fill='black'>0′</text><text x='7' y='113.22' font-size='1.5' fill='black'>5′</text><text x='12' y='113.22' font-size='1.5' fill='black'>10′</text><text x='22.38' y='-4' font-size='3'>↑ N</text>
+<rect x='28.759999999999998' y='115.22' width='17' height='5' stroke='black' fill='none' />
+<text x='29.259999999999998' y='116.22' font-size='1.5' fill='black'>Site Plan – Lot 1</text><text x='29.259999999999998' y='117.72' font-size='1.5' fill='black'>2946 22nd Ave S</text><text x='29.259999999999998' y='119.22' font-size='1.5' fill='black'>Date: June 2025</text><text x='29.259999999999998' y='120.72' font-size='1.5' fill='black'>Scale: 1" = 10′</text></svg>
