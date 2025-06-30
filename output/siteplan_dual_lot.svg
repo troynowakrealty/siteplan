@@ -62,8 +62,8 @@
   <text x='682.6' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
   <text x='682.6' y='334.0' text-anchor='middle' font-size='10'>Max Height: 24' roofline, 36' peak</text>
   <text x='682.6' y='472' text-anchor='middle' font-size='10'>FFE = 9.0'</text>
-  <rect x='87.8' y='300' width='5' height='10' fill='black' />
-  <text x='82.8' y='305' font-size='10' text-anchor='end' transform='rotate(-90 82.8,305)'>Side Door (Facing 30th St S)</text>
+  <rect x='85.8' y='300' width='5' height='10' fill='black' stroke='black' stroke-width='2' />
+  <text x='80.8' y='305' font-size='10' text-anchor='end' transform='rotate(-90 80.8,305)'>Primary Entrance – Faces 30th St S</text>
 
   <!-- Porches -->
   <rect x='67.8' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
@@ -106,7 +106,7 @@
   <!-- ADU Stairs -->
   <line x1='243.8' y1='860' x2='243.8' y2='880' stroke='black' />
   <polygon points='238.8,880 248.8,880 243.8,890' fill='black' />
-  <text x='243.8' y='895' text-anchor='middle' font-size='10'>Stairs</text>
+  <text x='243.8' y='895' text-anchor='middle' font-size='10'>Exterior Stairs (Up to ADU)</text>
   <line x1='668.8' y1='860' x2='668.8' y2='880' stroke='black' />
   <polygon points='663.8,880 673.8,880 668.8,890' fill='black' />
   <text x='668.8' y='895' text-anchor='middle' font-size='10'>Stairs</text>

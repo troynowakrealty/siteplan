@@ -507,20 +507,28 @@ def main() -> None:
         )
     )
 
-    # Side door for Lot 2 left unit facing 30th Street South
+    # Primary entrance for Lot 2 facing 30th Street South
     door_x = lot2_duplex_x
     door_y = 300
-    lines.append("  " + svg_rect(Rectangle(door_x, door_y, 5, 10), fill="black"))
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(door_x - 2, door_y, 5, 10),
+            fill="black",
+            stroke="black",
+            **{"stroke-width": 2},
+        )
+    )
     lines.append(
         "  "
         + svg_text(
-            door_x - 5,
+            door_x - 7,
             door_y + 5,
-            "Side Door (Facing 30th St S)",
+            "Primary Entrance \u2013 Faces 30th St S",
             **{
                 "font-size": 10,
                 "text-anchor": "end",
-                "transform": f"rotate(-90 {door_x - 5},{door_y + 5})",
+                "transform": f"rotate(-90 {door_x - 7},{door_y + 5})",
             },
         )
     )
@@ -710,7 +718,7 @@ def main() -> None:
 
     lines.append("")
     lines.append("  <!-- ADU Stairs -->")
-    for adu_x in [lot2_adu_x, lot1_adu_x]:
+    for idx, adu_x in enumerate([lot2_adu_x, lot1_adu_x]):
         base_x = adu_x + adu_w / 2
         base_y = adu_y + adu_h
         lines.append(
@@ -732,12 +740,13 @@ def main() -> None:
                 fill="black",
             )
         )
+        label = "Exterior Stairs (Up to ADU)" if idx == 0 else "Stairs"
         lines.append(
             "  "
             + svg_text(
                 base_x,
                 base_y + 35,
-                "Stairs",
+                label,
                 **{"text-anchor": "middle", "font-size": 10},
             )
         )

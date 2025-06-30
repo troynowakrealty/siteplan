@@ -13,7 +13,7 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "Front Setback" in content
     assert "Front Duplex" in content
     assert "Porch A" in content
-    assert "Side Door" in content
+    assert "Primary Entrance" in content
     assert "Garage with ADU" in content
     assert "FFE = 9.0'" in content
     assert "A/C Unit" in content
@@ -22,3 +22,4 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     assert "North" in content
     assert "Zoning: NTM-1" in content
     assert "2946 &amp; 2948 22nd Ave" in content
+    assert "Exterior Stairs" in content
