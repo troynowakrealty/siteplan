@@ -11,3 +11,5 @@ def test_example_siteplan_dual_lot(tmp_path, monkeypatch):
     content = svg.read_text()
     assert "<rect" in content
     assert "Front Setback" in content
+    assert "Front Duplex" in content
+    assert "Porch A" in content

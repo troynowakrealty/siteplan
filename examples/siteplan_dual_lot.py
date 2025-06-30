@@ -244,6 +244,94 @@ def main() -> None:
         )
     )
 
+    lines.append("")
+    lines.append("  <!-- Duplexes -->")
+    duplex_w = 33 * SCALE
+    duplex_h = 28 * SCALE
+    lot2_duplex_x = 67.8
+    lot1_duplex_x = 502.6
+    duplex_y = front_y
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(lot2_duplex_x, duplex_y, duplex_w, duplex_h),
+            fill="#ddddff",
+            stroke="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            lot2_duplex_x + duplex_w / 2,
+            duplex_y + duplex_h / 2,
+            "Front Duplex (33' × 28', 2-Story)",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+    lines.append(
+        "  "
+        + svg_rect(
+            Rectangle(lot1_duplex_x, duplex_y, duplex_w, duplex_h),
+            fill="#ddddff",
+            stroke="black",
+        )
+    )
+    lines.append(
+        "  "
+        + svg_text(
+            lot1_duplex_x + duplex_w / 2,
+            duplex_y + duplex_h / 2,
+            "Front Duplex (33' × 28', 2-Story)",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+
+    lines.append("")
+    lines.append("  <!-- Porches -->")
+    porch_w = 6 * SCALE
+    porch_h = 10 * SCALE
+    porch_y = 120
+    lot2_porches = [(67.8, "Porch A (6' × 10')"), (237.8, "Porch B (6' × 10')")]
+    lot1_porches = [(502.6, "Porch A (6' × 10')"), (672.6, "Porch B (6' × 10')")]
+
+    for x, label in lot2_porches:
+        lines.append(
+            "  "
+            + svg_rect(
+                Rectangle(x, porch_y, porch_w, porch_h),
+                fill="#ffeedd",
+                stroke="black",
+            )
+        )
+        lines.append(
+            "  "
+            + svg_text(
+                x + porch_w / 2,
+                porch_y + porch_h / 2,
+                label,
+                **{"text-anchor": "middle", "font-size": 10},
+            )
+        )
+
+    for x, label in lot1_porches:
+        lines.append(
+            "  "
+            + svg_rect(
+                Rectangle(x, porch_y, porch_w, porch_h),
+                fill="#ffeedd",
+                stroke="black",
+            )
+        )
+        lines.append(
+            "  "
+            + svg_text(
+                x + porch_w / 2,
+                porch_y + porch_h / 2,
+                label,
+                **{"text-anchor": "middle", "font-size": 10},
+            )
+        )
+
     lines.append(svg_footer())
     out.write_text("\n".join(lines))
 

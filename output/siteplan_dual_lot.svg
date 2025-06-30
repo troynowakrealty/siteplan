@@ -29,4 +29,20 @@
   <text x='10' y='551.1' text-anchor='middle' font-size='12' transform='rotate(-90 10,551.1)'>30th Street South</text>
   <text x='458.8' y='1097.2' text-anchor='middle' font-size='12'>16' Alley (Rear)</text>
   <text x='912.6' y='1097.2' text-anchor='end' font-size='12'>Scale 1" = 10'</text>
+
+  <!-- Duplexes -->
+  <rect x='67.8' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
+  <text x='232.8' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+  <rect x='502.6' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
+  <text x='667.6' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+
+  <!-- Porches -->
+  <rect x='67.8' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='97.8' y='170.0' text-anchor='middle' font-size='10'>Porch A (6' × 10')</text>
+  <rect x='237.8' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='267.8' y='170.0' text-anchor='middle' font-size='10'>Porch B (6' × 10')</text>
+  <rect x='502.6' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='532.6' y='170.0' text-anchor='middle' font-size='10'>Porch A (6' × 10')</text>
+  <rect x='672.6' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='702.6' y='170.0' text-anchor='middle' font-size='10'>Porch B (6' × 10')</text>
 </svg>
