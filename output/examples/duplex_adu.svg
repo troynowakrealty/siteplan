@@ -1,0 +1,18 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='720.0' height='320.0'>
+<line x1='0' y1='0' x2='0' y2='320.0' stroke='#ddd' />
+<line x1='100' y1='0' x2='100' y2='320.0' stroke='#ddd' />
+<line x1='200' y1='0' x2='200' y2='320.0' stroke='#ddd' />
+<line x1='300' y1='0' x2='300' y2='320.0' stroke='#ddd' />
+<line x1='400' y1='0' x2='400' y2='320.0' stroke='#ddd' />
+<line x1='500' y1='0' x2='500' y2='320.0' stroke='#ddd' />
+<line x1='600' y1='0' x2='600' y2='320.0' stroke='#ddd' />
+<line x1='700' y1='0' x2='700' y2='320.0' stroke='#ddd' />
+<line x1='0' y1='0' x2='720.0' y2='0' stroke='#ddd' />
+<line x1='0' y1='100' x2='720.0' y2='100' stroke='#ddd' />
+<line x1='0' y1='200' x2='720.0' y2='200' stroke='#ddd' />
+<line x1='0' y1='300' x2='720.0' y2='300' stroke='#ddd' />
+<rect x='0.0' y='0.0' width='400.0' height='300.0' fill='none' stroke='black' />
+<text x='200.0' y='-5.0' fill='black' text-anchor='middle' font-size='12'>40.0x30.0 ft</text>
+<rect x='500.0' y='0.0' width='200.0' height='200.0' fill='none' stroke='black' />
+<text x='600.0' y='-5.0' fill='black' text-anchor='middle' font-size='12'>20.0x20.0 ft</text>
+</svg>

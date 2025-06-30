@@ -39,3 +39,14 @@ Execute the automated tests with `pytest`:
 ```bash
 pytest
 ```
+
+## Examples
+
+To generate a sample duplex with an accessory dwelling unit, run:
+
+```bash
+python -m examples.duplex_adu
+```
+
+This writes `output/examples/duplex_adu.svg`. The SVG uses a scale of
+1&nbsp;ft&nbsp;=&nbsp;10&nbsp;px and includes gridlines and dimension labels.
