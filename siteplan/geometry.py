@@ -1,14 +1,17 @@
 from math import sqrt
 
+
 class Point:
     def __init__(self, x: float, y: float):
         self.x = x
         self.y = y
 
+
 class Size:
     def __init__(self, width: float, height: float):
         self.width = width
         self.height = height
+
 
 class Rectangle:
     def __init__(self, *args):
@@ -29,6 +32,7 @@ class Rectangle:
         self.x += dx
         self.y += dy
         return self
+
 
 def distance(a: tuple, b: tuple) -> float:
     return sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
