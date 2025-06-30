@@ -1,0 +1,98 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='917.6' height='1102.2'>
+  <!-- Title Block -->
+  <rect x='5' y='5' width='300' height='50' fill='#f5f5f5' stroke='black' />
+  <text x='10' y='25' font-size='14' font-family='sans-serif'>Site Plan – Lot 1 &amp; Lot 2 (NTM-1 St Pete)</text>
+  <!-- North Arrow -->
+  <polygon points='458.8,40 448.8,60 468.8,60' fill='black' />
+  <text x='458.8' y='75' text-anchor='middle' font-size='12'>North</text>
+  <text x='10' y='45' font-size='12' font-family='sans-serif'>Prepared: 2025-06-30</text>
+  <!-- Lot 2 -->
+  <rect x='0' y='0' width='467.6' height='1102.2' fill='none' stroke='black' stroke-width='2' />
+  <text x='233.8' y='20' text-anchor='middle' font-size='14'>Lot 2</text>
+  <!-- Lot 1 -->
+  <rect x='467.6' y='0' width='450.0' height='1101.1' fill='none' stroke='black' stroke-width='2' />
+  <text x='692.6' y='20' text-anchor='middle' font-size='14'>Lot 1</text>
+
+  <!-- Setback lines -->
+  <line x1='0' y1='180' x2='467.6' y2='180' stroke='blue' stroke-dasharray='5,5' />
+  <text x='5' y='175' font-size='12'>18' Front Setback</text>
+  <line x1='0' y1='991.2' x2='467.6' y2='991.2' stroke='blue' stroke-dasharray='5,5' />
+  <text x='5' y='985.2' font-size='12'>11' Rear Setback</text>
+  <line x1='80' y1='0' x2='80' y2='1102.2' stroke='blue' stroke-dasharray='5,5' />
+  <text x='85' y='551.1' font-size='12' transform='rotate(-90 85,551.1)'>8' Side Setback</text>
+  <line x1='417.6' y1='0' x2='417.6' y2='1102.2' stroke='blue' stroke-dasharray='5,5' />
+  <text x='412.6' y='551.1' font-size='12' transform='rotate(-90 412.6,551.1)'>5' Side Setback</text>
+  <line x1='467.6' y1='180' x2='917.6' y2='180' stroke='blue' stroke-dasharray='5,5' />
+  <text x='472.6' y='175' font-size='12'>18' Front Setback</text>
+  <line x1='467.6' y1='991.2' x2='917.6' y2='991.2' stroke='blue' stroke-dasharray='5,5' />
+  <text x='472.6' y='985.2' font-size='12'>11' Rear Setback</text>
+  <line x1='517.6' y1='0' x2='517.6' y2='1101.1' stroke='blue' stroke-dasharray='5,5' />
+  <text x='522.6' y='550.55' font-size='12' transform='rotate(-90 522.6,550.55)'>5' Side Setback</text>
+  <line x1='867.6' y1='0' x2='867.6' y2='1101.1' stroke='blue' stroke-dasharray='5,5' />
+  <text x='862.6' y='550.55' font-size='12' transform='rotate(-90 862.6,550.55)'>5' Side Setback</text>
+
+  <!-- Buildable Areas -->
+  <polygon points='80,180 417.6,180 417.6,991.2 80,991.2' fill='none' stroke='gray' stroke-dasharray='4 4' />
+  <polygon points='517.6,180 867.6,180 867.6,991.2 517.6,991.2' fill='none' stroke='gray' stroke-dasharray='4 4' />
+  <!-- Divider -->
+  <line x1='467.6' y1='0' x2='467.6' y2='1102.2' stroke='black' />
+  <text x='458.8' y='15' text-anchor='middle' font-size='12'>22nd Avenue South (Front)</text>
+  <text x='10' y='551.1' text-anchor='middle' font-size='12' transform='rotate(-90 10,551.1)'>30th Street South</text>
+  <text x='458.8' y='1097.2' text-anchor='middle' font-size='12'>16' Alley (Rear)</text>
+  <line x1='757.6' y1='1062.2' x2='857.6' y2='1062.2' stroke='black' stroke-width='2' />
+  <text x='807.6' y='1057.2' text-anchor='middle' font-size='10'>10'</text>
+  <text x='912.6' y='1047.2' text-anchor='end' font-size='12'>Scale 1" = 10'</text>
+  <text x='912.6' y='1077.2' text-anchor='end' font-size='12'>Zoning: NTM-1 (St. Petersburg, FL) – Setback Compliant</text>
+
+  <!-- Duplexes -->
+  <rect x='87.8' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
+  <text x='252.8' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+  <rect x='517.6' y='180' width='330' height='280' fill='#ddddff' stroke='black' />
+  <text x='682.6' y='320.0' text-anchor='middle' font-size='12'>Front Duplex (33' × 28', 2-Story)</text>
+  <rect x='87.8' y='300' width='5' height='10' fill='black' />
+  <text x='82.8' y='305' font-size='10' text-anchor='end' transform='rotate(-90 82.8,305)'>Side Door (Facing 30th St S)</text>
+
+  <!-- Porches -->
+  <rect x='67.8' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='97.8' y='170.0' text-anchor='middle' font-size='10'>Porch A (6' × 10')</text>
+  <rect x='237.8' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='267.8' y='170.0' text-anchor='middle' font-size='10'>Porch B (6' × 10')</text>
+  <rect x='502.6' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='532.6' y='170.0' text-anchor='middle' font-size='10'>Porch A (6' × 10')</text>
+  <rect x='672.6' y='120' width='60' height='100' fill='#ffeedd' stroke='black' />
+  <text x='702.6' y='170.0' text-anchor='middle' font-size='10'>Porch B (6' × 10')</text>
+
+  <!-- Garages with ADUs -->
+  <rect x='93.8' y='660' width='300' height='200' fill='#ccffcc' stroke='black' />
+  <text x='243.8' y='760.0' text-anchor='middle' font-size='12'>Garage with ADU (2BR/1BA)</text>
+  <rect x='518.8' y='660' width='300' height='200' fill='#ccffcc' stroke='black' />
+  <text x='668.8' y='760.0' text-anchor='middle' font-size='12'>Garage with ADU (2BR/1BA)</text>
+
+  <!-- ADU Stairs -->
+  <line x1='243.8' y1='860' x2='243.8' y2='880' stroke='black' />
+  <polygon points='238.8,880 248.8,880 243.8,890' fill='black' />
+  <text x='243.8' y='895' text-anchor='middle' font-size='10'>Stairs</text>
+  <line x1='668.8' y1='860' x2='668.8' y2='880' stroke='black' />
+  <polygon points='663.8,880 673.8,880 668.8,890' fill='black' />
+  <text x='668.8' y='895' text-anchor='middle' font-size='10'>Stairs</text>
+
+  <!-- Parking Pads -->
+  <rect x='93.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='138.8' y='960.0' text-anchor='middle' font-size='10'>P1</text>
+  <rect x='193.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='238.8' y='960.0' text-anchor='middle' font-size='10'>P2</text>
+  <rect x='293.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='338.8' y='960.0' text-anchor='middle' font-size='10'>P3</text>
+  <rect x='518.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='563.8' y='960.0' text-anchor='middle' font-size='10'>P1</text>
+  <rect x='618.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='663.8' y='960.0' text-anchor='middle' font-size='10'>P2</text>
+  <rect x='718.8' y='860' width='90' height='200' fill='#ffff99' stroke='black' />
+  <text x='763.8' y='960.0' text-anchor='middle' font-size='10'>P3</text>
+
+  <!-- Trash Pads -->
+  <rect x='390' y='860' width='60' height='200' fill='#deb887' stroke='black' />
+  <text x='420.0' y='960.0' text-anchor='middle' font-size='10'>Trash Pad (6' × 20')</text>
+  <rect x='880' y='860' width='60' height='200' fill='#deb887' stroke='black' />
+  <text x='910.0' y='960.0' text-anchor='middle' font-size='10'>Trash Pad (6' × 20')</text>
+</svg>
