@@ -91,3 +91,13 @@ python examples/duplex_adu.py
 ```
 
 The resulting SVG will be written to `output/examples/duplex_adu.svg`.
+
+## Viewing Example Output
+
+GitHub's diff viewer does not always render new SVG files in pull requests.
+To preview the generated site plans, open the SVG file directly in the
+repository and click **View raw**. For example, after running the dual lot
+example the file will be written to `output/siteplan_dual_lot.svg`. Opening this
+file in your browser (or embedding it in Markdown using
+`![Site Plan](output/siteplan_dual_lot.svg?sanitize=true)`) will display the full
+drawing.
