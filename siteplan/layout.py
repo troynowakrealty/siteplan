@@ -7,7 +7,14 @@ import json
 import pickle
 
 from .geometry import Rectangle
-from .svg_writer import svg_footer, svg_grid, svg_header, svg_rect, svg_text
+from .svg_writer import (
+    svg_boundary,
+    svg_dimensions,
+    svg_footer,
+    svg_grid,
+    svg_header,
+    svg_rect,
+)
 
 
 @dataclass
@@ -33,19 +40,8 @@ class Layout:
             f.write(svg_grid(width, height) + "\n")
             for rect in self.shapes:
                 f.write(svg_rect(rect, fill="none", stroke="black") + "\n")
-                label_x = rect.x + rect.width / 2
-                label_y = rect.y - 5
-                dims = f"{rect.width/scale}x{rect.height/scale} ft"
-                f.write(
-                    svg_text(
-                        label_x,
-                        label_y,
-                        dims,
-                        fill="black",
-                        **{"text-anchor": "middle", "font-size": 12},
-                    )
-                    + "\n"
-                )
+                f.write(svg_boundary(rect) + "\n")
+                f.write(svg_dimensions(rect, scale) + "\n")
             f.write(svg_footer() + "\n")
 
     def save(self, path: Path) -> None:

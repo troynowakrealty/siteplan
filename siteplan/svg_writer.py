@@ -61,6 +61,58 @@ def svg_text(x: float, y: float, text: str, **attrs: object) -> str:
     return f"<text {attr_str}>{text}</text>"
 
 
+def svg_boundary(rect: Rectangle, offset: float = 5, **attrs: object) -> str:
+    """Generate a dashed boundary polygon around *rect*."""
+    points = [
+        Point(rect.x - offset, rect.y - offset),
+        Point(rect.x + rect.width + offset, rect.y - offset),
+        Point(rect.x + rect.width + offset, rect.y + rect.height + offset),
+        Point(rect.x - offset, rect.y + rect.height + offset),
+    ]
+    boundary_attrs = {"fill": "none", "stroke": "red", "stroke-dasharray": "4 2"}
+    boundary_attrs.update(attrs)
+    return svg_polygon(points, **boundary_attrs)
+
+
+def svg_dimensions(rect: Rectangle, scale: float = 10) -> str:
+    """Return simple width/height dimension lines and labels for *rect*."""
+    elements = []
+    top_y = rect.y - 10
+    left_x = rect.x - 10
+    # dimension lines
+    elements.append(
+        svg_line(
+            Point(rect.x, top_y), Point(rect.x + rect.width, top_y), stroke="black"
+        )
+    )
+    elements.append(
+        svg_line(
+            Point(left_x, rect.y), Point(left_x, rect.y + rect.height), stroke="black"
+        )
+    )
+    # labels
+    elements.append(
+        svg_text(
+            rect.x + rect.width / 2,
+            top_y - 2,
+            f"{rect.width/scale} ft",
+            fill="black",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+    elements.append(
+        svg_text(
+            left_x - 2,
+            rect.y + rect.height / 2,
+            f"{rect.height/scale} ft",
+            fill="black",
+            transform=f"rotate(-90 {left_x - 2},{rect.y + rect.height / 2})",
+            **{"text-anchor": "middle", "font-size": 12},
+        )
+    )
+    return "\n".join(elements)
+
+
 def svg_grid(width: float, height: float, spacing: float = 100) -> str:
     """Generate light gridlines for the plan."""
     lines = []
